@@ -6,6 +6,8 @@ import java.sql.Statement;
 
 public class Student extends Table{
 
+
+
     public Student(Statement statement) {
         super(statement);
     }

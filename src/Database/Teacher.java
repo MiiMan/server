@@ -6,15 +6,12 @@ import java.sql.Statement;
 
 public class Teacher extends Table{
 
-    private int passwordLenght = 6;
+    public int passwordLenght = 6;
 
     public Teacher(Statement statement) {
         super(statement);
     }
 
-    public void setPasswordLenght(int lenght) {
-        passwordLenght = lenght;
-    }
 
     public boolean add(String username, String password) {
         if (password.length() > passwordLenght) {
